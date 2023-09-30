@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Westlee's Bookshelf App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Westlee's Bookshelf App</h2>
+    </header>
+
+    <div class="wrap">
+      <div class="container">
+        <h1>Tambahkan Buku</h1>
+        <form action="" id="form">
+          <label for="title">Judul</label>
+          <input type="text" id="title" name="title" required />
+          <label for="author">Penulis</label>
+          <input type="text" id="author" name="author" required />
+          <label for="year">Tahun terbit</label>
+          <input type="number" min="0" id="year" name="year" required />
+          <label for="isComplete"
+            >Sudah dibaca <input value="true" id="isComplete" name="isComplete" type="checkbox"
+          /></label>
+          <input type="submit" value="Tambah" name="submit" class="button"/>
+        </form>
+      </div>
+
+      <div class="container">
+        <h1>Cari Buku</h1>
+        <form>
+          <label for="Search">Search</label>
+          <input type="text" name="Search" id="Search"/>
+        </form>
+        <p id="info"></p>
+      </div>
+
+      <div class="container">
+        <h1>Belum selesai dibaca</h1>
+        <div id="belum">
+
+        </div>
+      </div>
+
+      <div class="container">
+        <h1>Sudah selesai dibaca</h1>
+        
+        <div id="sudah">
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>
